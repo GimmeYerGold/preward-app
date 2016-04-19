@@ -310,7 +310,7 @@ var Challenge = React.createClass({
 					<p className="content">{messageText}</p>
 				</div>
 				<div className="trophyContainer">	
-				<img className="trophy" src="/images/trophyshadow.png" />
+				<img className="trophy" src="./images/trophyshadow.png" />
 				<h6 className="completeness">0%</h6>
 				</div>
 				<a className="hyperlink" href={hyperlink} >{hyperlink}</a>
@@ -364,7 +364,7 @@ var SplashPage = React.createClass({
 		return (
 			<div className="loginContainer">
 				<div className="inputContainer">
-				<img className="goldTrophy" src="/images/trophygoldshadow.png" />
+				<img className="goldTrophy" src="./images/trophygoldshadow.png" />
 				<h3>ichieve</h3>
 				<input type="email" name="email" placeholder="enter your email" onChange={this._updateEmail} required/>
 				<input type="text" name="username" placeholder="enter your username" onChange={this._updateUser} required/>
