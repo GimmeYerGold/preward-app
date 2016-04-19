@@ -93,7 +93,13 @@ img {
     max-width: 100%;
 }
 body {
-    font-family: 'San Francisco', 'Helvetica', 'Trebuchet MS', Arial, sans-serif;
+    animation: animatedBackground 40s linear infinite;
+    font-family: 'Rubik', 'Trebuchet MS', Arial, sans-serif;
+    background: url("/images/random_grey_variations_@2X.png") 0 0 repeat;
+    -webkit-animation: animate_background 60s linear 0s infinite;
+    -moz-animation: animate_background 60s linear 0s infinite;
+    -o-animation: animate_background 60s linear 0s infinite;
+    animation: animate_background 60s linear 0s infinite;
 }
 
 /**
@@ -128,9 +134,219 @@ body {
  * App code
  */
 
+.sidePanel {
+    display: inline-block;
+    min-width: 25%;
+    vertical-align: top;
+    background: rgba(240,248,255,.55);
+    padding: 2%;
+    box-shadow: 10px 10px rgba(0,0,0,.5);
+    margin: 3%;
+
+}
+
+.userImage {
+    display: inline-block;
+    margin-right: 5%;  
+    box-shadow: 5px 5px rgba(0,0,0,.5);
+}
+
+.userName {
+    display: inline-block;
+    color: rgba(0,0,0,.5);
+    vertical-align: top;
+}
+
+.stats {
+    display: inline-block;
+    margin-top: 3%;
+    vertical-align: top;
+}
+
+.achievementsContainer {
+   display: inline-block;
+   margin-right: 5%
+}
+
+.challengesContainer {
+    display: inline-block;
+}
+
+.achievementsChallengesSection {
+    text-align: left;
+}
+
+.challenges {
+    display: inline-block;
+    width: 100%;
+}
+
+.viewPanel {
+    background: rgba(240,248,255,.55);
+    width: 60%;
+    padding: 2%;
+    box-shadow: 10px 10px rgba(0,0,0,.5);
+    margin: 3%;
+    display: inline-block;
+}
+
+.issueChallenge {
+    display: inline-block;
+}
+
+.challengeController {
+    text-align: left;
+}
+
+.issueChallenge {
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 10%;
+}
+
+.challengesIssued {
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 10%;
+
+} 
+
+.logout {
+    display: inline-block;
+    margin-left: 2%;
+}   
+
+.challengesIssued {
+    display: inline-block;
+}
+
+.challengerSideBar {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.challenger {
+
+}
+
+.composeChallenge {
+    display: inline-block;
+}
+
+.trophyContainer {
+    display: inline-block;
+}
+
+.messageDetails {
+    display: inline-block;
+}
+
+
+.trophy {
+    max-width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ a {
+    display: block;
+ }
+
+ .messenger {
+    width: 40%;
+ }
+
  .message {
 
     margin: 2%;
-    background: cornflowerblue;
-    border: 2px solid tomato;
+    border-top: 2px solid tomato;
+    // border-right: transparent;
+    // border-left: transparent;
  }
+
+ input {
+        width: 100%;
+        display: block;
+        margin: 2%;
+        }
+
+    .rewardContainer {    
+
+       margin-top: 10%; 
+   }
+
+    .challengerSideBar {
+        margin: 1%;
+    }
+
+    .composeChallenge {
+
+      margin: 1%;  
+    }
+
+.loginContainer {
+    box-shadow: 20px 20px rgba(0,0,0,0.5);
+    margin: 5% auto;
+    width: 33%;
+    text-align: -webkit-center;
+    background: rgba(240,248,255,.55);
+    padding: 5px;
+
+    .inputContainer {
+        width: 80%;
+        margin-bottom: 5%;
+
+             h3 {
+                  color: rgba(0,0,0,0.5); 
+                  font-style: italic; 
+                  font-family: 'Rubik';
+                }
+
+            button {
+                width: 100%;
+                margin: 2%;
+                display: block;
+            }
+    }    
+}
+
+.selection {
+
+    .queryResults {
+        width: 100%;
+}
+    }
+
+
+@-webkit-keyframes animate_background { 
+    from { 
+        background-position: -50% 150%;
+    } 
+    to { 
+        background-position: 150% -50%;
+    } 
+}
+@-moz-keyframes animate_background { 
+    from { 
+        background-position: -50% 150%;
+    } 
+    to { 
+        background-position: 150% -50%;
+    } 
+}
+@-o-keyframes animate_background { 
+    from { 
+        background-position: -50% 150%;
+    } 
+    to { 
+        background-position: 150% -50%;
+    } 
+}
+@keyframes animate_background { 
+    from { 
+        background-position: -50% 150%;
+    } 
+    to { 
+        background-position: 150% -50%;
+    } 
+}
